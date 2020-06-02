@@ -21,6 +21,7 @@ export const palette = {
   fadedYellow: '#FFF5D9',
 
   // CovidSafe color palette
+  brandPurple: '#8D55E9',
   sectionTitle: '#141414',
   bodyCopy: '#404040',
   grayIcon: '#6E6E6E',
@@ -29,7 +30,7 @@ export const palette = {
 
 const theme = {
   colors: {
-    mainBackground: palette.brandBlue,
+    mainBackground: palette.brandPurple,
     overlayBackground: palette.white,
     overlaySectionTitle: palette.sectionTitle,
     overlayBodyText: palette.bodyCopy,
