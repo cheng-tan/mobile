@@ -3,6 +3,7 @@ import {ScrollView, StyleSheet} from 'react-native';
 import {Box, Text, Button, Icon} from 'components';
 import {useNavigation} from '@react-navigation/native';
 import {useI18n} from '@shopify/react-i18n';
+import {Theme} from 'shared/theme';
 
 export const Start = () => {
   const [i18n] = useI18n();
@@ -13,7 +14,7 @@ export const Start = () => {
         <Box paddingHorizontal="l" marginTop="m">
           <Text
             variant="bodyTitle"
-            color="overlayBodyText"
+            color="overlaySectionTitle"
             marginHorizontal="l"
             marginBottom="l"
             textAlign="center"
@@ -23,13 +24,13 @@ export const Start = () => {
           </Text>
         </Box>
         <Box flexDirection="row" alignItems="center" marginBottom="l">
-          <Icon size={30} name="icon-notifications" />
+          <Icon size={30} name="icon-notifications" color="overlayIcon" />
           <Text variant="bodyText" color="overlayBodyText" marginLeft="m" marginRight="m">
             {i18n.translate('OnboardingStart.Body1')}
           </Text>
         </Box>
         <Box flexDirection="row" alignItems="center" marginBottom="l">
-          <Icon size={30} name="icon-notify" />
+          <Icon size={30} name="icon-notify" color="overlayIcon" />
           <Text variant="bodyText" color="overlayBodyText" marginLeft="m" marginRight="m">
             {i18n.translate('OnboardingStart.Body2')}
           </Text>

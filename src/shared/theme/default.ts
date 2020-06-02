@@ -19,13 +19,21 @@ export const palette = {
   neutralGrey: '#F4F4F4',
   darkGrey: '#cecece',
   fadedYellow: '#FFF5D9',
+
+  // CovidSafe color palette
+  sectionTitle: '#141414',
+  bodyCopy: '#404040',
+  grayIcon: '#6E6E6E',
+  linkPurple: '#9651F1',
 };
 
 const theme = {
   colors: {
     mainBackground: palette.brandBlue,
     overlayBackground: palette.white,
-    overlayBodyText: palette.bodyBlack,
+    overlaySectionTitle: palette.sectionTitle,
+    overlayBodyText: palette.bodyCopy,
+    overlayIcon: palette.grayIcon,
     fadedBackground: palette.fadedWhite,
     bodyText: palette.white,
     bodyTextFaded: palette.fadedTextWhite,
@@ -112,7 +120,7 @@ const theme = {
   },
   buttonVariants: {
     bigFlat: {
-      color: palette.linkBlue,
+      color: palette.linkPurple,
       height: 52,
       textColor: palette.white,
       fontFamily: 'Nunito',
@@ -126,7 +134,7 @@ const theme = {
     bigFlatWhite: {
       color: palette.white,
       height: 52,
-      textColor: palette.linkBlue,
+      textColor: palette.linkPurple,
       fontFamily: 'Nunito',
       fontSize: 18,
       borderWidth: undefined,
@@ -153,7 +161,7 @@ const theme = {
     text: {
       color: 'transparent',
       height: 44,
-      textColor: palette.linkBlue,
+      textColor: palette.linkPurple,
       fontFamily: 'Nunito',
       fontSize: 18,
       borderWidth: undefined,

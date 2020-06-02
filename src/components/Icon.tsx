@@ -28,6 +28,10 @@ import ShieldActive from 'assets/shield-active.svg';
 import ShieldCovid from 'assets/shield-covid.svg';
 import ShieldDisabled from 'assets/shield-disabled.svg';
 
+import CovidSafeLogo from 'assets/covidsafe-logo.svg';
+import {useTheme} from '@shopify/restyle';
+import {Theme} from 'shared/theme';
+
 const ICONS = {
   'icon-back-arrow': IconBackArrow,
   'icon-bluetooth': IconBluetooth,
@@ -57,6 +61,7 @@ const ICONS = {
   'shield-disabled': ShieldDisabled,
   'shield-active': ShieldActive,
   'shield-covid': ShieldCovid,
+  'covidsafe-logo': CovidSafeLogo,
 };
 
 type IconName = keyof typeof ICONS;
@@ -64,9 +69,14 @@ type IconName = keyof typeof ICONS;
 export interface IconProps {
   name: IconName;
   size?: number;
+  color?: keyof Theme['colors'];
 }
 
-export const Icon = ({name, size = 24}: IconProps) => {
+export const Icon = ({name, size = 24, color}: IconProps) => {
+  const theme = useTheme<Theme>();
   const IconImpl = ICONS[name];
-  return IconImpl ? <IconImpl width={size} height={size} /> : null;
+  const iconColor = color && theme.colors[color] || 'black';
+  return IconImpl ? <IconImpl width={size} height={size} style={{
+    color: iconColor,
+  }} /> : null;
 };
