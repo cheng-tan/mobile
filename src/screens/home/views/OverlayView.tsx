@@ -96,7 +96,7 @@ export const OverlayView = ({status, notificationWarning, turnNotificationsOn, m
             action: () => navigation.navigate('DataSharing'),
           }}
           backgroundColor="infoBlockBrightBackground"
-          color="infoBlockBrightText"
+          color="overlayBodyText"
         />
       </Box>
       <Box marginBottom="m" marginHorizontal="m">

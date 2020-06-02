@@ -53,7 +53,7 @@ export const InfoBlock = ({
         {text}
       </Text>
       <Box marginHorizontal="none" alignSelf="stretch">
-        <Button text={buttonText} onPress={action} variant="hollow" color={color} />
+        <Button text={buttonText} onPress={action} variant="filled" color={'mainBackground'} />
       </Box>
     </Box>
   );

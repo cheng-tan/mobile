@@ -25,13 +25,13 @@ export const Start = () => {
         </Box>
         <Box flexDirection="row" alignItems="center" marginBottom="l">
           <Icon size={30} name="icon-notifications" color="overlayIcon" />
-          <Text variant="bodyText" color="overlayBodyText" marginLeft="m" marginRight="m">
+          <Text variant="bodyText" color="overlaySecondaryBodyText" marginLeft="m" marginRight="m">
             {i18n.translate('OnboardingStart.Body1')}
           </Text>
         </Box>
         <Box flexDirection="row" alignItems="center" marginBottom="l">
           <Icon size={30} name="icon-notify" color="overlayIcon" />
-          <Text variant="bodyText" color="overlayBodyText" marginLeft="m" marginRight="m">
+          <Text variant="bodyText" color="overlaySecondaryBodyText" marginLeft="m" marginRight="m">
             {i18n.translate('OnboardingStart.Body2')}
           </Text>
         </Box>

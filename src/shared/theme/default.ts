@@ -23,9 +23,11 @@ export const palette = {
   // CovidSafe color palette
   brandPurple: '#8D55E9',
   sectionTitle: '#141414',
-  bodyCopy: '#404040',
+  secondaryBodyCopy: '#404040',
+  bodyCopy: '#141414',
   grayIcon: '#6E6E6E',
   linkPurple: '#9651F1',
+  lightPurple: '#F6F1FF',
 };
 
 const theme = {
@@ -34,6 +36,7 @@ const theme = {
     overlayBackground: palette.white,
     overlaySectionTitle: palette.sectionTitle,
     overlayBodyText: palette.bodyCopy,
+    overlaySecondaryBodyText: palette.secondaryBodyCopy,
     overlayIcon: palette.grayIcon,
     fadedBackground: palette.fadedWhite,
     bodyText: palette.white,
@@ -44,7 +47,7 @@ const theme = {
     statusError: palette.error,
     errorBackground: palette.errorLight,
     errorText: palette.error,
-    infoBlockBrightBackground: palette.lightBlue,
+    infoBlockBrightBackground: palette.lightPurple,
     infoBlockBrightText: palette.brandBlue,
     infoBlockNeutralBackground: palette.neutralGrey,
     infoBlockNeutralText: palette.bodyBlack,
@@ -145,6 +148,15 @@ const theme = {
       color: 'transparent',
       height: 44,
       textColor: undefined,
+      fontFamily: 'Nunito',
+      fontSize: 18,
+      borderWidth: 1,
+      disabled: {},
+    },
+    filled: {
+      color: palette.brandPurple,
+      height: 44,
+      textColor: 'white',
       fontFamily: 'Nunito',
       fontSize: 18,
       borderWidth: 1,
