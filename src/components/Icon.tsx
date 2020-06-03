@@ -30,6 +30,8 @@ import ShieldCovid from 'assets/shield-covid.svg';
 import ShieldDisabled from 'assets/shield-disabled.svg';
 
 import CovidSafeLogo from 'assets/covidsafe-logo.svg';
+import UWLogo from 'assets/uw-logo.svg';
+
 import CovidSafeLogoWhite from 'assets/covidsafe-logo-white.svg';
 import UWLogoWhite from 'assets/uw-logo-white.svg';
 
@@ -66,6 +68,7 @@ const ICONS = {
   'shield-active': ShieldActive,
   'shield-covid': ShieldCovid,
   'covidsafe-logo': CovidSafeLogo,
+  'uw-logo': UWLogo,
   'covidsafe-logo-white': CovidSafeLogoWhite,
   'uw-logo-white': UWLogoWhite,
   'icon-learn-more': IconLearnMore,
