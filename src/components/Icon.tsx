@@ -20,6 +20,7 @@ import IconLearn from 'assets/icon-learn.svg';
 import IconOffline from 'assets/icon-offline.svg';
 import IconExposureNotificationsDisabled from 'assets/icon-exposure-notifications-disabled.svg';
 import IconExposureNotificationsOff from 'assets/icon-exposure-notifications-off.svg';
+import IconLearnMore from 'assets/icon-learn-more.svg';
 import ProgressCircleEmpty from 'assets/progress-circle-empty.svg';
 import ProgressCircleFilled from 'assets/progress-circle-filled.svg';
 import ShareHeading from 'assets/share-heading.svg';
@@ -29,6 +30,9 @@ import ShieldCovid from 'assets/shield-covid.svg';
 import ShieldDisabled from 'assets/shield-disabled.svg';
 
 import CovidSafeLogo from 'assets/covidsafe-logo.svg';
+import CovidSafeLogoWhite from 'assets/covidsafe-logo-white.svg';
+import UWLogoWhite from 'assets/uw-logo-white.svg';
+
 import {useTheme} from '@shopify/restyle';
 import {Theme} from 'shared/theme';
 
@@ -62,6 +66,9 @@ const ICONS = {
   'shield-active': ShieldActive,
   'shield-covid': ShieldCovid,
   'covidsafe-logo': CovidSafeLogo,
+  'covidsafe-logo-white': CovidSafeLogoWhite,
+  'uw-logo-white': UWLogoWhite,
+  'icon-learn-more': IconLearnMore,
 };
 
 type IconName = keyof typeof ICONS;

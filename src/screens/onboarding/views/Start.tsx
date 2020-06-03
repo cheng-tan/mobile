@@ -35,7 +35,8 @@ export const Start = () => {
             {i18n.translate('OnboardingStart.Body2')}
           </Text>
         </Box>
-        <Box flexDirection="row" justifyContent="space-around" alignItems="center" marginBottom="l">
+        <Box flexDirection="row" alignItems="center" marginBottom="l">
+          <Icon size={30} name="icon-learn-more" color="overlayIcon" />
           <Button
             text={i18n.translate('OnboardingStart.TutorialAction')}
             variant="bigFlatWhite"

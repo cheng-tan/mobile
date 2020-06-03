@@ -19,13 +19,11 @@ export const Header = ({isOverlay}: HeaderProps) => {
   }, [navigation]);
   return (
     <TouchableWithoutFeedback onPress={onLogoPress}>
-      <Box flexDirection="row" alignItems="center" justifyContent="center" marginBottom="l">
+      <Box flexDirection="row" alignItems="center" justifyContent="center" marginTop="-l">
         <Box marginHorizontal="s">
-          <Icon size={20} name="covidsafe-logo" />
+          <Icon size={24} name="uw-logo-white" />
         </Box>
-        <Text variant="homeHeader" color={isOverlay ? 'overlayBodyText' : 'bodyText'}>
-          {i18n.translate('Home.AppName')}
-        </Text>
+        <Icon size={116} name="covidsafe-logo-white" />
       </Box>
     </TouchableWithoutFeedback>
   );
