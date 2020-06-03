@@ -11,8 +11,8 @@
       "One": "You will receive a notification asking you to share your random IDs each day for the next {number} day.",
       "Other": "You will receive a notification asking you to share your random IDs each day for the next {number} days."
     },
-    "SignalDataSharedCTA": "Track your symptoms",
-    "SymptomTrackerUrl": "https://ca.thrive.health/covid19app/action/88a5e9a7-db9e-487b-bc87-ce35035f8e5c?from=/home&navigateTo=/tracker/complete",
+    "SignalDataSharedCTA": "Symptom guidance from the CDC",
+    "SymptomTrackerUrl": "https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html",
     "DailyShare": "Share your new random IDs",
     "DailyShareDetailed": "Sharing your data helps others to know if they have possibly been exposed to COVID-19.",
     "ShareRandomIDsCTA": "Share your random IDs",

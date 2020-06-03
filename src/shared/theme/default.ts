@@ -28,6 +28,7 @@ export const palette = {
   grayIcon: '#6E6E6E',
   linkPurple: '#9651F1',
   lightPurple: '#F6F1FF',
+  warningHigh: '#E83A3A',
 };
 
 const theme = {
@@ -144,19 +145,19 @@ const theme = {
       borderWidth: undefined,
       disabled: {},
     },
+    bigFlatRed: {
+      color: palette.warningHigh,
+      height: 52,
+      textColor: palette.white,
+      fontFamily: 'Nunito',
+      fontSize: 18,
+      borderWidth: undefined,
+      disabled: {},
+    },
     hollow: {
       color: 'transparent',
       height: 44,
       textColor: undefined,
-      fontFamily: 'Nunito',
-      fontSize: 18,
-      borderWidth: 1,
-      disabled: {},
-    },
-    filled: {
-      color: palette.brandPurple,
-      height: 44,
-      textColor: 'white',
       fontFamily: 'Nunito',
       fontSize: 18,
       borderWidth: 1,

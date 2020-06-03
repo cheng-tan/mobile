@@ -16,18 +16,20 @@ export interface InfoBlockProps {
   button: {
     text: string;
     action: () => void;
+    variant?: string;
   };
 }
 
 export const InfoBlock = ({
   icon,
   text,
-  button: {text: buttonText, action},
+  button: {text: buttonText, action, variant},
   color,
   backgroundColor,
   title,
   titleBolded,
 }: InfoBlockProps) => {
+  const buttonVariant = variant ? variant : 'bigFlat';
   return (
     <Box borderRadius={10} backgroundColor={backgroundColor} padding="m" alignItems="center">
       {icon && (
@@ -53,7 +55,7 @@ export const InfoBlock = ({
         {text}
       </Text>
       <Box marginHorizontal="none" alignSelf="stretch">
-        <Button text={buttonText} onPress={action} variant="filled" color={'mainBackground'} />
+        <Button text={buttonText} onPress={action} variant={buttonVariant} />
       </Box>
     </Box>
   );
