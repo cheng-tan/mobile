@@ -19,7 +19,7 @@ export const Header = ({isOverlay}: HeaderProps) => {
   }, [navigation]);
   return (
     <TouchableWithoutFeedback onPress={onLogoPress}>
-      <Box flexDirection="row" alignItems="center" justifyContent="center" marginTop="-l">
+      <Box flexDirection="row" alignItems="center" justifyContent="center" marginVertical='-xl'>
         <Box marginHorizontal="s">
           <Icon size={24} name="uw-logo-white" />
         </Box>
