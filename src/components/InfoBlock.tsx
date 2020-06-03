@@ -12,6 +12,7 @@ export interface InfoBlockProps {
   title?: string;
   titleBolded?: string;
   color: keyof Theme['colors'];
+  iconColor?: keyof Theme['colors'];
   backgroundColor: keyof Theme['colors'];
   button: {
     text: string;
@@ -22,6 +23,7 @@ export interface InfoBlockProps {
 
 export const InfoBlock = ({
   icon,
+  iconColor,
   text,
   button: {text: buttonText, action, variant},
   color,
@@ -34,7 +36,7 @@ export const InfoBlock = ({
     <Box borderRadius={10} backgroundColor={backgroundColor} padding="m" alignItems="center">
       {icon && (
         <Box marginBottom="m">
-          <Icon name={icon} size={24} />
+          <Icon name={icon} size={24} color={iconColor}/>
         </Box>
       )}
       {(title || titleBolded) && (

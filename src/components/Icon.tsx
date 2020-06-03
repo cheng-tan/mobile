@@ -82,7 +82,7 @@ export interface IconProps {
 export const Icon = ({name, size = 24, color}: IconProps) => {
   const theme = useTheme<Theme>();
   const IconImpl = ICONS[name];
-  const iconColor = color && theme.colors[color] || 'black';
+  const iconColor = color && theme.colors[color] || theme.colors.overlayIcon;
   return IconImpl ? <IconImpl width={size} height={size} style={{
     color: iconColor,
   }} /> : null;

@@ -97,6 +97,7 @@ export const OverlayView = ({status, notificationWarning, turnNotificationsOn, m
           }}
           backgroundColor="infoBlockBrightBackground"
           color="overlayBodyText"
+          iconColor="mainBackground"
         />
       </Box>
       <Box marginBottom="m" marginHorizontal="m">
