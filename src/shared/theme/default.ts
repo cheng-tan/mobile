@@ -145,6 +145,16 @@ const theme = {
       borderWidth: undefined,
       disabled: {},
     },
+    bigFlatWhiteOverlay: {
+      color: palette.white,
+      height: 52,
+      textColor: palette.bodyCopy,
+      fontWeight: '600',
+      fontFamily: 'Nunito',
+      fontSize: 18,
+      borderWidth: undefined,
+      disabled: {},
+    },
     bigFlatRed: {
       color: palette.warningHigh,
       height: 52,

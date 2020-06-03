@@ -49,7 +49,7 @@ const NotificationStatusOff = ({action, i18n}: {action: () => void; i18n: I18n})
       title={i18n.translate('OverlayOpen.NotificationCardStatus')}
       titleBolded={i18n.translate('OverlayOpen.NotificationCardStatusOff')}
       text={i18n.translate('OverlayOpen.NotificationCardBody')}
-      button={{text: i18n.translate('OverlayOpen.NotificationCardAction'), action, variant: "bigFlatWhite"}}
+      button={{text: i18n.translate('OverlayOpen.NotificationCardAction'), action, variant: "bigFlatWhiteOverlay"}}
       backgroundColor="infoBlockNeutralBackground"
       color="overlayBodyText"
     />
